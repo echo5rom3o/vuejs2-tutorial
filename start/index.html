@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>VueJS Tutorials</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<!-- controled by vue instance #vue-app -->
+		<div id="header">
+			<h1>{{ greet('afternoon') }}</h1>
+			<a :href="website" target="_blank">Check out my cv</a>
+			<input type="text" :value="job">
+			<p v-html="websiteTag"></p>
+			<P>{{ name }}</p>
+			<p>{{ job }}</p>
+		</div>
+	</body>
+	<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+	<script src="app.js"></script>
+</html>
