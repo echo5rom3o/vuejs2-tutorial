@@ -15,6 +15,7 @@
 			<button @dblclick="add(10)">Add 10</button>
 			<button @dblclick="subtract(10)">Subtract 10</button>
 			<div id="canvas" @mousemove="updateXY">{{x}},{{y}}</div>
+			<a @click.prevent="click" href="http://www.vsrodriguez.com" target="_blank">MeDotCom</a>
 		</div>
 	</body>
 	<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
